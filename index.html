@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Heading -->
+         <h1>Unit Converter</h1>
+         <p class="subtitle">Simple . Fast . Easy</p>
+
+         <!-- converter -->
+          <div class="converter">
+            <!-- catagory -->
+             <label for="catagory">Select Catagory</label>
+             <select  id="catagory">
+                <option value="length">Length</option>
+                <option value="weight">Weight</option>
+                <option value="temperature">Temperature</option>
+                <option value="time">Time</option>
+                <option value="data">Data</option>
+             </select>
+
+             <!-- input -->
+              <label for="inputValue">
+                Enter Value
+              </label>
+              <input type="number" id="inputValue" placeholder="Enter value">
+
+              <!-- From and To -->
+               <div class="unit-row">
+                <div class="unit-box">
+                    <label for="fromUnit">
+                        From
+                    </label>
+                    <select  id="fromUnit"></select>
+                </div>
+
+                <button id="swapButton" class="swap-button" title="Swap Units">⇄</button>
+
+                <div class="unit-box">
+                    <label for="toUnit">To</label>
+                    <select id="toUnit"></select>
+                </div>
+
+               </div>
+
+               <!-- result -->
+                <div class="result-box">
+                    <span>Result</span>
+                    <h2 id="result">0</h2>
+                </div>
+
+                <!-- button -->
+                 <div class="buttons">
+                    <button id="convertButton" class="convert-button">Convert</button>
+                    <button id="clearButton" class="clear-button">Clear</button>
+                 </div>
+          </div>
+
+          <p class="footer">Built with HTML . CSS . JavaScript</p>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
